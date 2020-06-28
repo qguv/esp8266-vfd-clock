@@ -109,7 +109,6 @@ void setup()
 
 void loop()
 {
-  Vfd.write("            ");
   show_time();
   delay(500);
 }
