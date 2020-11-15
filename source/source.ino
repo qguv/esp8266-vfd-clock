@@ -1,5 +1,5 @@
-// VFD Mumble indicator
-// F0x and Sebastius for Revspace.nl mumble server
+// esp8266-vfd-clock
+// based on VFD mumble indicator by F0x and Sebastius for Revspace.nl mumble server
 // Yolo just take what you need for your projects and share alike!
 
 // Connect hardware as follows
