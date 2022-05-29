@@ -54,7 +54,7 @@ void show_time(bool blink)
   b[6] = t[3];
   b[7] = t[4];
   if (blink) {
-    b[5] = '.';
+    b[11] = '-';
   }
   Vfd.write(b);
 }
