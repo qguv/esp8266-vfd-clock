@@ -1,19 +1,4 @@
-// esp8266-vfd-clock
-// based on VFD mumble indicator by F0x and Sebastius for Revspace.nl mumble server
-// Yolo just take what you need for your projects and share alike!
-
-// Connect hardware as follows
-// ESP  -  VFD
-// VU   -  5v
-// GND  -  GND
-// D0   -  RST
-// D1   -  CS
-// D2   -  VFD_ON
-// D5   -  CLK
-// D7   -  DIN
-
 #include <Arduino.h>
-
 #include <LittleFS.h>
 #include <WiFiSettings.h>
 #include <ArduinoOTA.h>
