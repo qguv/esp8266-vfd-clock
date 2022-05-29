@@ -160,8 +160,8 @@ void setup()
   };
 
   WiFiSettings.onPortalWaitLoop = []() {
-    static unsigned long last_frame = ARRAY_LEN(anim_connecting);
-    unsigned long frame = millis() / ANIM_FRAME_MS % ARRAY_LEN(anim_connecting);
+    static unsigned long last_frame = ARRAY_LEN(anim_config);
+    unsigned long frame = millis() / ANIM_FRAME_MS % ARRAY_LEN(anim_config);
     if (last_frame != frame) {
       last_frame = frame;
       Vfd.write(anim_config[frame]);
