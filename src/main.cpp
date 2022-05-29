@@ -26,7 +26,7 @@
 #include <VFD.h>
 
 #define ANIM_FRAME_MS 40
-#define WIFI_TIMEOUT_SEC 30
+#define WIFI_TIMEOUT_SEC 15
 #define ARRAY_LEN(X) (sizeof (X) / sizeof (X)[0])
 
 WiFiUDP ntpUDP;
