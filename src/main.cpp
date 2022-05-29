@@ -98,10 +98,10 @@ char * const anim_connecting[24] = {
 };
 
 char * const anim_config[4] = {
-    " - config | ",
-    " \\ config / ",
-    " | config - ",
-    " / config \\ ",
+    " ) config ( ",
+    " + config + ",
+    " ( config ) ",
+    " + config + ",
 };
 
 void setup()
@@ -155,13 +155,23 @@ void setup()
 
     Vfd.write("  ------>ntp");
     delay(ANIM_FRAME_MS);
-    Vfd.write("    ----->tp");
+    Vfd.write("   ------>tp");
     delay(ANIM_FRAME_MS);
-    Vfd.write("      ---->p");
+    Vfd.write("    ------>p");
     delay(ANIM_FRAME_MS);
-    Vfd.write("        --->");
+    Vfd.write("     ------>");
+    delay(ANIM_FRAME_MS);
+    Vfd.write("      ------");
+    delay(ANIM_FRAME_MS);
+    Vfd.write("       -----");
+    delay(ANIM_FRAME_MS);
+    Vfd.write("        ----");
+    delay(ANIM_FRAME_MS);
+    Vfd.write("         ---");
     delay(ANIM_FRAME_MS);
     Vfd.write("          --");
+    delay(ANIM_FRAME_MS);
+    Vfd.write("           -");
     delay(ANIM_FRAME_MS);
     Vfd.write("            ");
   };
