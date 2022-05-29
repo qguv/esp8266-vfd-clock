@@ -25,7 +25,7 @@
 
 const char* ssid = "ssid";
 const char* password = "password";
-const long utcOffsetSec = 1 * 60 * 60;
+const long utcOffsetSec = 2 * 60 * 60;
 const long updateIntervalMs = 24 * 60 * 60 * 1000;
 
 WiFiUDP ntpUDP;
