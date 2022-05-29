@@ -25,22 +25,23 @@
 
 const char* ssid = "ssid";
 const char* password = "password";
+const long utcOffsetSec = 1 * 60 * 60;
+const long updateIntervalMs = 24 * 60 * 60 * 1000;
 
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP);
 
 void show_time()
 {
-	while (!timeClient.update())
-		timeClient.forceUpdate();
+  timeClient.update();
 
-	String t = timeClient.getFormattedTime().c_str();
-        char b[13] = "            ";
-        if (t[0] != '0') b[3] = t[0];
-        b[4] = t[1];
-        b[6] = t[3];
-        b[7] = t[4];
-        Vfd.write(b);
+  String t = timeClient.getFormattedTime().c_str();
+  char b[13] = "            ";
+  if (t[0] != '0') b[3] = t[0];
+  b[4] = t[1];
+  b[6] = t[3];
+  b[7] = t[4];
+  Vfd.write(b);
 }
 
 void setup()
@@ -104,11 +105,12 @@ void setup()
   }
 
   timeClient.begin();
-  timeClient.setTimeOffset(3600);
+  timeClient.setTimeOffset(utcOffsetSec);
+  timeClient.setUpdateInterval(updateIntervalMs);
 }
 
 void loop()
 {
   show_time();
-  delay(500);
+  delay(1000);
 }
