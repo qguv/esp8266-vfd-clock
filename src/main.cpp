@@ -179,5 +179,6 @@ void loop()
   if (should_blink) {
     blinking = !blinking;
   }
+  ArduinoOTA.handle();
   delay(1000);
 }
