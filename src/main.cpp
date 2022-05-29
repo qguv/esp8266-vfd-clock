@@ -97,26 +97,19 @@ char * const anim_connecting[24] = {
     ">--         ",
 };
 
-char * const anim_config[19] = {
+char * const anim_config[12] = {
     "   config   ",
-    "1  config   ",
-    ")1 config   ",
-    "))1config   ",
-    ") )1onfig   ",
-    "))))1nfig   ",
-    ")) ))1fig   ",
-    ") )) )1ig   ",
-    "))) )))1g   ",
-    " ) )) ))1   ",
-    "  )) ))))1  ",
-    " ) )))) ))1 ",
-    "  ) )))) ))1",
-    "   ) )))))1(",
-    "   c) )))1((",
-    "   co) )1(((",
-    "   con)1g(  ",
-    "   conf)(   ",
-    "   conf1g   ",
+    "   config   ",
+    "   config   ",
+    "   [onfig   ",
+    "   c0nfig   ",
+    "   co&fig   ",
+    "   con%ig   ",
+    "   conf|g   ",
+    "   confi6   ",
+    "   config   ",
+    "   config   ",
+    "   config   ",
 };
 
 void setup()
