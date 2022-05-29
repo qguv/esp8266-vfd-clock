@@ -104,7 +104,7 @@ void setup()
   }
 
   timeClient.begin();
-  timeClient.setTimeOffset(7200);
+  timeClient.setTimeOffset(3600);
 }
 
 void loop()
