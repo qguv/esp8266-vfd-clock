@@ -59,6 +59,17 @@ void show_time(bool blink)
   Vfd.write(b);
 }
 
+void show_characters(bool blink)
+{
+  static char b[13] = "            ";
+  static char c = '!';
+  for (int i = 0; i < 11; i++) {
+    b[i] = b[i+1];
+  }
+  b[11] = c++;
+  Vfd.write(b);
+}
+
 char * const anim_connecting[24] = {
     "->          ",
     "-->         ",
